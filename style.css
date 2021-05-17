@@ -6,6 +6,27 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
+@keyframes toggleslide {
+    from {
+        left:90vw;
+    }
+
+    to {
+        left:73vw;
+    }
+}
+@keyframes toggleright {
+    from {
+        left:73vw;
+    }
+
+    to {
+        left:90vw;
+    }
+}
 header
 {
     position: absolute;
@@ -13,7 +34,6 @@ header
     left: 0;
     width: 100%;
     padding: 40px 100px;
-    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,10 +43,12 @@ header .logo
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
+    z-index:1;
 }
 .toggle
 {
-    position: relative;
+    position: fixed;
+    left:90vw;
     width: 60px;
     height: 60px;
     background: url(https://i.ibb.co/HrfVRcx/menu.png);
@@ -34,6 +56,8 @@ header .logo
     background-size: 30px;
     background-position: center;
     cursor: pointer;
+    z-index:1000;
+    animation:toggleright 0.5s;
 }
 .toggle.active
 {
@@ -42,6 +66,8 @@ header .logo
     background-size: 25px;
     background-position: center;
     cursor: pointer;
+    left:73vw;
+    animation:toggleslide 0.5s;
 }
 .showcase
 {
@@ -55,14 +81,43 @@ header .logo
     align-items: center;
     background: #111;
     transition: 0.5s;
+}
+.about{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
     z-index: 2;
+}
+.hidden{
+    display:none;
 }
 .showcase.active
 {
     right: 300px;
 }
+.about.active
+{
+    right:300px;
+}
 
 .showcase video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.about video
 {
     position: absolute;
     top: 0;
@@ -158,7 +213,7 @@ header .logo
 }
 .menu
 {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 300px;
@@ -166,6 +221,7 @@ header .logo
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index:-1;
 }
 .menu ul
 {
@@ -184,6 +240,18 @@ header .logo
 .menu ul li a:hover
 {
     color: #03a9f4;
+}
+#aboutSection{
+    position:absolute;
+    top:100vh;
+}
+#projectSection{
+    position:absolute;
+    top:200vh;
+}
+#contactSection{
+    position:absolute;
+    top:300vh;
 }
 
 @media (max-width: 991px)

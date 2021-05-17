@@ -10,7 +10,8 @@
     </head>
 
     <body>
-    <section class="showcase">
+    <div class="showcase">
+    <section class="showcase" id="homeSection">
         <header>
             <h2 class="logo">Brandon</h2>
             <div class="toggle"></div>
@@ -20,24 +21,53 @@
         <div class="text">
             <h2>Brandon Collette</h2>
             <h3>Full Stack Web Developer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-            <a href="#">projects</a>
+            <p>Welcome to my website</p>
+            <a href="#projectSection">projects</a>
         </div>
         <ul class="social">
             <li><a href="https://www.linkedin.com/in/brandoncollette/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://github.com/BrandonCollette" target="_blank"><i class="fab fa-github"></i></a></li>
         </ul>
     </section>
+
+    <section class="showcase" id="aboutSection">
+        <header>
+            <h2 class="logo">About Me</h2>
+        </header>
+<!--        <video src="videos/VID_20180825_185321_3.mp4" muted loop autoplay></video>-->
+        <div class="overlay"></div>
+        <div class="text">
+            <p>I am a hardworking individual driven by passion and the love for my family. I have 5+ years experience as
+                an assembler/composition technician but recently turned a new leaf as I attended Learning Fuze coding
+                boot camp and am now pursuing a career in web development.
+            </p>
+        </div>
+    </section>
+
+    <section class="showcase" id="projectSection">
+        <header>
+            <h2 class="logo">My Projects</h2>
+        </header>
+<!--        <video src="videos/VID_20180825_185321_3.mp4" muted loop autoplay></video>-->
+        <div class="overlay"></div>
+    </section>
+
+    <section class="showcase" id="contactSection">
+        <header>
+            <h2 class="logo">Contact Me</h2>
+        </header>
+<!--        <video src="videos/VID_20180825_185321_3.mp4" muted loop autoplay></video>-->
+        <div class="overlay"></div>
+    </section>
+    </div>
+
     <div class="menu">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li id="homeLink"><a href="#">Home</a></li>
             <li><a href="https://drive.google.com/file/d/14q2a100gaqIne9UGjX5P-pH3U2YGENzB/view?usp=sharing" target="_blank">Resume</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li id="aboutLink"><a href="#aboutSection">About Me</a></li>
+            <li id="projectsLink"><a href="#projectSection">Projects</a></li>
+            <li id="contactLink"><a href="#contactSection">Contact</a></li>
         </ul>
     </div>
 
