@@ -293,6 +293,7 @@ header .logo
 .project{
     text-align:center;
     margin:2vw;
+    width:50%;
 }
 .projectImg{
     margin-left:10vw;
@@ -318,6 +319,8 @@ header .logo
 .projectText{
     color:white;
     text-align:start;
+    height:20vh;
+    line-height:1.9;
 }
 hr{
     margin:3vw;
@@ -341,9 +344,58 @@ hr{
     width:49%;
     letter-spacing: 2px;
     transition: 0.2s;
+    border-radius:6px;
 }
 .codeLinks a:hover{
     letter-spacing:6px;
+}
+#infoSection{
+    border-style:solid;
+    border-color:white;
+    width:40%;
+    z-index:1;
+    color:white;
+    text-align:left;
+    font-size:3vh;
+    margin:auto;
+    border-radius:5px;
+}
+#infoContainer{
+    width:80%;
+    margin:auto;
+}
+#infoTitle{
+    text-align:center;
+    margin-bottom:3vh;
+}
+.contactType{
+    line-height:3.5;
+}
+.contactType a{
+    text-decoration:none;
+    color:white;
+}
+.contactLogo{
+    margin-right:1vw;
+    color:#3980bd;
+}
+#footer{
+    position:absolute;
+    bottom:0;
+    left:0;
+    background-color:black;
+    color:white;
+    width:100%;
+    height:10vh;
+    text-align:center;
+}
+#creator{
+    font-size:80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight:lighter;
 }
 
 
@@ -361,5 +413,78 @@ hr{
     .text h3
     {
         font-size: 2em;
+    }
+    .projectImg{
+        height:15vh;
+    }
+    #infoSection{
+        font-size:200%;
+        width:100%;
+        height:40vh;
+        line-height:5;
+    }
+    #homeSection{
+        font-size:2.5vh;
+    }
+    .toggle{
+        background-size: 3.3vh;
+    }
+    .toggle.active{
+        background-size: 3.3vh;
+    }
+    .menu{
+        font-size:7vh;
+    }
+    .menu ul li a{
+        font-size:3vh;
+    }
+    #aboutSection{
+        display:flex;
+        flex-wrap:wrap;
+        font-size:2.5vh;
+    }
+    #aboutText{
+        font-size:1.1vh;
+        position:absolute;
+        bottom:4vh;
+        width:80%;
+        margin-left:11.7vw;
+
+    }
+    #selfImage{
+        position:absolute;
+        top:10vh;
+        margin-left:11vw;
+        width:70vw;
+    }
+    #projectsContainer{
+        display:flex;
+        flex-wrap:wrap;
+        margin-top:4vh;
+    }
+    #projectPageTitle{
+        font-size:2.5vh;
+    }
+    .projectTitle{
+        display:block;
+        font-size:2.5vh;
+        text-decoration:none;
+    }
+    .project{
+        width:100%;
+    }
+    .projectText{
+        color:white;
+        text-align:start;
+        height:17vh;
+        font-size:1.3vh;
+        line-height:1.9;
+    }
+    .codeLinks a{
+        font-size:1.6vh;
+        border-radius:10px;
+    }
+    #contactPageTitle{
+        font-size:2.5vh;
     }
 }
