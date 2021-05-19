@@ -487,4 +487,13 @@ hr{
     #contactPageTitle{
         font-size:2.5vh;
     }
+    #infoSection{
+        height:50vh;
+    }
+    #infoContainer{
+        margin-left:10vh;
+    }
+    a{
+        text-decoration:none;
+    }
 }
