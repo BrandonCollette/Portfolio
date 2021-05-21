@@ -400,7 +400,14 @@ hr{
 .indent{
     text-indent:4%;
 }
-
+.linkHover{
+    letter-spacing:2px;
+    transition:0.5s;
+}
+.linkHover:hover{
+    letter-spacing:3px;
+    text-shadow:0 0 20px #3988da;
+}
 
 @media (max-width: 991px)
 {
