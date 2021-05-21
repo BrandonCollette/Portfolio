@@ -402,7 +402,7 @@ hr{
 }
 .linkHover{
     letter-spacing:2px;
-    transition:0.5s;
+    transition:0.2s;
 }
 .linkHover:hover{
     letter-spacing:3px;
