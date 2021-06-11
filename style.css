@@ -283,6 +283,8 @@ header .logo
 }
 #aboutText{
     font-size:1vw;
+    height:80vh;
+    overflow:hidden;
 }
 #projectsContainer{
     display:flex;
@@ -321,6 +323,7 @@ header .logo
     text-align:start;
     height:20vh;
     line-height:1.9;
+    font-size:1vw;
 }
 hr{
     margin:3vw;
@@ -456,10 +459,9 @@ hr{
     #aboutText{
         font-size:1.1vh;
         position:absolute;
-        bottom:4vh;
+        bottom:-21%;
         width:80%;
         margin-left:11.7vw;
-
     }
     #selfImage{
         position:absolute;
